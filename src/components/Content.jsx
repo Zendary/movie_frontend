@@ -19,7 +19,7 @@ function Content({ user, loggedIn }) {
                 {
         loggedIn ?
             [ <>
-                // add as many as you'd like here
+            
                 <Route path='/shows' element={<Shows user={user} />} />
                 <Route path='/festivals' element={<Festivals user={user} />} />
             
