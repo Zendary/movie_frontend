@@ -82,7 +82,7 @@ function Shows(props) {
         body: JSON.stringify(newShow),
       });
       const data = await response.json();
-      console.log(data); // You can handle the response as needed
+      console.log(data);
       setNewShow({
         name: '',
         duration: '',
@@ -90,7 +90,7 @@ function Shows(props) {
         startDate: '',
         startTime: '',
       });
-      fetchShows(); // Refresh the shows list after creating a new show
+      fetchShows();
     } catch (error) {
       console.log(error);
     }
@@ -102,8 +102,8 @@ function Shows(props) {
         method: 'DELETE',
       });
       const data = await response.json();
-      console.log(data); // You can handle the response as needed
-      fetchShows(); // Refresh the shows list immediately after deleting a show
+      console.log(data); 
+      fetchShows(); 
     } catch (error) {
       console.log(error);
     }

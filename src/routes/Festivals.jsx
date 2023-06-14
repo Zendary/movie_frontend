@@ -82,14 +82,14 @@ function Festivals(props) {
         body: JSON.stringify(newFestival),
       });
       const data = await response.json();
-      console.log(data); // You can handle the response as needed
+      console.log(data);
       setNewFestival({
         name: '',
         city: '',
         startDate: '',
         duration: '',
       });
-      fetchFestivals(); // Refresh the festivals list after creating a new festival
+      fetchFestivals();
     } catch (error) {
       console.log(error);
     }
@@ -101,8 +101,8 @@ function Festivals(props) {
         method: 'DELETE',
       });
       const data = await response.json();
-      console.log(data); // You can handle the response as needed
-      fetchFestivals(); // Refresh the festivals list immediately after deleting a festival
+      console.log(data); 
+      fetchFestivals(); 
     } catch (error) {
       console.log(error);
     }

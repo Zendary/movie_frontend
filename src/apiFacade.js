@@ -9,7 +9,7 @@ function handleHttpErrors(res) {
 }
 
 function apiFacade() {
- /* Insert utility-methods from a later step (d) here (REMEMBER to uncomment in the returned object when you do)*/
+ 
 
 const login = (user, password) => {
     const options = makeOptions("POST", true,{username: user, password: password });
